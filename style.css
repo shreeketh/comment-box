@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: #090909;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.holder {
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+}
+
+.article{
+    margin: 10vw;
+}
+
+.main-content {
+    background-color: #cccccc;
+    min-height: 60px;
+    margin: 30px;
+    padding: 20px;
+    border-left: 5px solid green;
+    display: flex;
+    align-items: center;
+}
+/* TODO: fix that line is overlapping on the content */
+.comment-child-line {
+    padding-left: 20px;
+    margin-left: 60px;
+    height: calc(100% - 70px);
+    top: 66px;
+    position: absolute;
+    border-left: 1px solid #cccccc;
+}
+
+.comment {
+    margin-left: 60px;
+    position: relative;
+}
+
+.comment-holder {
+    margin-left: 10px;
+    background-color: #cdcdcd;
+    min-height: 50px;
+    max-width: 70vw;
+    padding: 20px;
+    position: relative;
+    top: -12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 0px;
+    border-right: 10px solid #cdcdcd;
+    position: absolute;
+}
+
+.add-comment {
+    margin-left: 10%;
+    width: 70vw;
+    border: 1px solid grey;
+}
+
+.add-comment:focus {
+    border: 1px solid green;
+    outline: none;
+}
+
+.button {
+    border: 1px solid grey;
+    background-color: grey;
+    color: white;
+    float: right;
+}
+
+.button:focus {
+    outline: none;
+    border: 1px solid blue;
+    background-color: black;
+}
+
+.add-comment:focus + .button {    
+    background-color: seagreen;
+}
