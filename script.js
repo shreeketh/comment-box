@@ -37,12 +37,7 @@ class Comment {
     }
 }
 
-// check why it doesn't work
-function testing(e) {
-    debugger;
-    console.log(e.target);
-}
-
+//  TODO: Move it to another file, and cleanup things
 document.getElementById('comment-box').addEventListener('click', (e) => {
     if (e.target.dataset.button === 'true') {
         const text = e.target.previousElementSibling.value;

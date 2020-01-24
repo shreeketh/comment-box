@@ -306,3 +306,22 @@ tree.insertNumberNode(6);
 
 -----------
 
+- Immedately involed function expressions
+- Function statement
+- function expression
+
+Plan:
+- bitwise operator
+- rinse weired parts
+- look at linked list and tree problem (traversal)
+- CSS w3 school reference
+- CSS animation, flex and keyframes
+- yield
+- recall all
+- normalize css and reset css
+- sprite and its advantages
+- what is microdata
+
+- Iron shirt
+- Resume printout 
+
