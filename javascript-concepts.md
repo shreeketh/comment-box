@@ -37,6 +37,7 @@
  Data Structure:
  - Brakikg into smaller problems and joining together to get the result.
  - Factorial: 
+ ```javascript
     function fact (n){
         if (n===0){
         return 1;
@@ -44,6 +45,7 @@
         else
         return n*fact(n-1);
     }
+  ```
 
 - print 321123
 function fun(n){
@@ -84,6 +86,7 @@ Non-Primitive data types:
 ## Throtling and debounce
 // debounce (check it)
 Example: search bar in flipkart, which will hit backend if we give some space while typing
+```javascript
 const getData = ()=>{
     console.log('hitting network')
 }
@@ -97,9 +100,10 @@ const dosomething = function(fn, d){
         }, d);
     }
 }
-
+```
 const betterFunction = dosomething(getData, 300);
 
+```javascript
 // Throttle
 Example: If button clicks repeatedly, trigger after some ineterval
     const throttle = (fn, limit)=>{
@@ -118,10 +122,12 @@ Example: If button clicks repeatedly, trigger after some ineterval
 
         }
     }
+```
 
 ## Polyfill for bind
 - Polyfill is a browser fallback
 
+```javascript
 let name = {
     firstName : "Sreeketh",
     lastName : 'k',
@@ -148,11 +154,14 @@ Function.prototype.myBind = function(...args){
 let printMyName2 = printName.myBind(name);
 
 printMyName2();
+```
 
 ## Function currying
 - Setting parameter value fixed.
 
 - Using bind:
+
+```javascript
 let multiply = function(x, y){
   console.log(x*y);
 }
@@ -163,16 +172,19 @@ multyplytwo(5)
 let multyplyThree = multiply.bind(this, 3);
 multyplyThree(5)
 
+```
 - Using closure:
 
+```javascript
 let multiply = function(x, y){
   console.log(x*y);
 }
 
 function createCurry(x){
-
     return function(y){multiply(x, y)};
 }
+
+```
 
 ## sum(1)(2)(3)(4)(5)
 
@@ -223,6 +235,7 @@ note: it guarantee the execution order
 ## Search and sort
 
 - Quick Sort:
+```javascript
 function quicksort(arr =[]){
     if(!arr.length){
        return arr;
@@ -235,9 +248,7 @@ function quicksort(arr =[]){
     return quicksort(left).concat(pivot).concat(quicksort(right));
 
 }
-
-
-
+```
 
 ------------
 ## CSS positions:
@@ -249,6 +260,7 @@ function quicksort(arr =[]){
 
 ## Binary search tree
 
+```javascript
 class bst3{
 
     constructor() {
@@ -302,6 +314,7 @@ class bst3{
 var tree = new bst();
 tree.insertNumberNode(5);
 tree.insertNumberNode(6);
+```
 ...
 
 -----------
@@ -321,7 +334,4 @@ Plan:
 - normalize css and reset css
 - sprite and its advantages
 - what is microdata
-
-- Iron shirt
-- Resume printout 
 
